@@ -1,0 +1,2 @@
+import React from "react";
+export function Button({className="",variant="default",size="default",...props}){const base="inline-flex items-center justify-center font-medium transition disabled:opacity-50";const v=variant==="outline"?"border border-slate-200 bg-white hover:bg-slate-50":"bg-slate-900 text-white hover:bg-slate-800";const s=size==="icon"?"h-10 w-10":"h-10 px-4";return <button className={`${base} ${v} ${s} ${className}`} {...props}/>;}
